@@ -59,6 +59,16 @@ curl -X POST \
 	http://exmple.com/admin
 ```
 
+Or you can specify a custom string to use in the result url instead of the random token:
+
+```
+curl -X POST \
+	-d '{"url": "https://www.james-ridgway.co.uk/blog/build-your-own-custom-short-url-generator-using-aws",
+	"custom_url": "very_nice_url"}' \
+	-H "x-api-key: XXXXX" \
+	http://exmple.com/admin
+```
+
 The response will provide you with the full short URL and token value in JSON output:
 
 ```
